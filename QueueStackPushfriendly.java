@@ -1,7 +1,7 @@
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class QueueStackPushFriendly {
+public class QueueStackPushfriendly {
 
     Queue<Integer> q1 = new LinkedList<>();
     Queue<Integer> q2 = new LinkedList<>();
@@ -32,15 +32,21 @@ public class QueueStackPushFriendly {
 
         return popped;
     }
+    // Print stack elements
+    public void printStack() {
+    System.out.println("Stack elements: " + q1);
+}
+
 
     public static void main(String[] args) {
-        QueueStackPushFriendly stack = new QueueStackPushFriendly();
+        QueueStackPushfriendly stack = new QueueStackPushfriendly();
         stack.push(10);
         stack.push(20);
         stack.push(30);
 
-        System.out.println(stack.pop()); // 30
-        System.out.println(stack.pop()); // 20
+        stack.printStack();
+        System.out.println("Popped: " + stack.pop()); // 30;
+        System.out.println("Popped: " + stack.pop()); // 20
+        stack.printStack();
     }
 }
-
